@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chat Home</title>
+</head>
+
+<body>
+    <h2>Enter Chat Room</h2>
+
+    <input id="room-name-input" type="text" placeholder="Enter room name">
+    <button onclick="enterRoom()">Join</button>
+
+    <script>
+        function enterRoom() {
+            const roomName = document.getElementById('room-name-input').value;
+            if (roomName) {
+                window.location.href = '/chat/' + roomName + '/';
+            }
+        }
+    </script>
+</body>
+
+</html>
